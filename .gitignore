@@ -1,0 +1,104 @@
+############################
+#   .NET / C# build files  #
+############################
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+
+############################
+#    IDE & Editor files    #
+############################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Rider / JetBrains
+.idea/
+*.DotSettings
+
+############################
+#       Test outputs       #
+############################
+TestResults/
+*.coverage
+*.coveragexml
+coverage/
+*.trx
+
+############################
+#       NuGet cache        #
+############################
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+############################
+#       Logs & temp        #
+############################
+*.log
+*.tlog
+*.tmp
+*.temp
+*.DS_Store
+*.swp
+
+############################
+#      Environment files   #
+############################
+*.env
+*.env.production
+*.env.development
+*.secret
+
+############################
+#    Publish & dist        #
+############################
+publish/
+dist/
+wwwroot/
+
+############################
+#     Docker / Database    #
+############################
+docker-data/
+pgdata/
+redis-data/
+rabbitmq-data/
+*.pid
+
+############################
+#      EF Core Migrations  #
+#   (ignore snapshots)     #
+############################
+**/Migrations/*Snapshot.cs
+
+############################
+#     Microservices extra  #
+############################
+# API Gateway temp files
+gateway-temp/
+
+# Shared libraries build artifacts
+SharedKernel/bin/
+SharedKernel/obj/
+
+############################
+#           Other          #
+############################
+*.ncrunchproject
+*.ncrunchsolution
+_ReSharper.*
+*.resharper
+*.orig
+*.bak
