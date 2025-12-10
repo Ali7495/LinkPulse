@@ -12,6 +12,8 @@ public static class DependencyInjection
 
         services.AddScoped<IShortUrlRepository,ShortUrlRepository>();
 
+        services.AddHealthChecks().AddNpgSql(connectionString,name: "postgres");
+
         return services;
     }
 }

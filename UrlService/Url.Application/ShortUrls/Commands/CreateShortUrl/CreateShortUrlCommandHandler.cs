@@ -13,7 +13,7 @@ public class CreateShortUrlCommandHandler : IRequestHandler<CreateShortUrlComman
     }
     public async Task<string> Handle(CreateShortUrlCommand request, CancellationToken cancellationToken)
     {
-        string shortCode = Guid.NewGuid().ToString("N")[7..];
+        string shortCode = Guid.NewGuid().ToString("N")[..7];
 
         ShortUrl shortUrl = new()
         {
