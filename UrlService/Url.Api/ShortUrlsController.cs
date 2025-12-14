@@ -24,5 +24,13 @@ namespace MyApp.Namespace
 
             return Ok(new { ShortCode = code });
         }
+
+        [HttpGet("{code}")]
+        public async Task<IActionResult> GetShortUrlByCode(string code)
+        {
+            var shortUrl = await _mediator.Send(new GetShortUrlsQuery(code));
+
+            return Ok(shortUrl);
+        }
     }
 }

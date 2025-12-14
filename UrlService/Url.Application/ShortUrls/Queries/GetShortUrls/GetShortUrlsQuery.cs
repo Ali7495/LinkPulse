@@ -1,6 +1,6 @@
-﻿namespace Url.Application;
+﻿using MediatR;
+using Url.Domain;
 
-public class GetShortUrlsQuery
-{
+namespace Url.Application;
 
-}
+public record GetShortUrlsQuery(string shortCode) : IRequest<ShortUrl?>;
