@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Url.Application;
 using Url.Domain;
 
 namespace Url.Infrastructure;
