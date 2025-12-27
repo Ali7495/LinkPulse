@@ -1,6 +1,6 @@
 ﻿namespace Auth.Domain;
 
-public class Email
+public interface ICurrentUser
 {
 
 }
