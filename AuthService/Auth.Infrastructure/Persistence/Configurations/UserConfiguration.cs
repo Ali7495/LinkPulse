@@ -1,6 +1,6 @@
 ﻿namespace Auth.Infrastructure;
 
-public class Class1
+public class UserConfiguration
 {
 
 }
